@@ -4,7 +4,11 @@ class CardsController < ApplicationController
   # GET /cards
   # GET /cards.json
   def index
-    @cards = Card.all
+    if params[:name]
+      @cards = Card.find(:all, conditions: ['name like ?', params[:name]+"%"])
+    else
+      @cards = Card.all
+    end
   end
 
   # GET /cards/1

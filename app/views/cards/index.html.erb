@@ -1,35 +1,41 @@
 <p id="notice"><%= notice %></p>
 
+<center>
+    <%= form_tag cards_path, method: 'get' do %>
+        <p>
+            <%= text_field_tag :name %>
+            <%= submit_tag "検索"%>
+        </p>
+    <% end %>
+</center>
+
 <table border align="center">
     <caption>
         <font size="5"><strong>所持カード一覧</strong></font>
         <font size="3"><strong>所持枚数 <%= @cards.size %> 枚</strong></font>
-        <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#modal-register">新規登録</button>
+        <%= link_to '新規追加', new_card_path, class: "btn btn-primary pull-right" %>
+        <!-- <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#modal-register">新規登録</button> -->
     </caption>
     <tr>
-        <th width="30%">カード番号</th>
-        <th width="30%">カード名</th>
-        <th width="30%">入力日</th>
+        <th width="40%">カード番号</th>
+        <th width="40%">カード名</th>
+        <th width="10%">編集</th>
         <th width="10%">削除</th>
     </tr>
     <% @cards.each do |card| %>
         <tr>
             <td><%= card.card_id %></td>
             <td><%= card.name %></td>
-            <td><%= card.created_at %></td>
-            <td>
-                <input type="hidden" name="card" value=<%= card %>>
-                <button type="submit" class="btn btn-primary">削除</button>
-            </td>
+            <td><%= link_to '編集', edit_card_path(card), class: "btn btn-default" %></td>
+            <td><%= link_to '削除', card, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %></td>
         </tr>
     <% end %>
 </table>
 
 <!-- モーダルの配置 -->
 <div class="modal fade" id="modal-register" tabindex="-1">
-    <form action="register" method="post">
-        <div class="modal-dialog modal-sm">
-
+    <div class="modal-dialog modal-sm">
+        <%= form_tag cards_path, method: 'post' do %>
             <!-- モーダルのコンテンツ -->
             <div class="modal-content">
                 <!-- モーダルのヘッダ -->
@@ -42,48 +48,19 @@
                 <!-- モーダルのボディ -->
                 <div class="modal-body">
                     <label>カード番号</label>
-                    <input type="text" name="card_id">
+                    <%= text_field_tag :card_id %>
                     <label>カード名</label>
-                    <input type="text" name="name">
+                    <%= text_field_tag :name %>
                 </div>
                 <!-- モーダルのフッタ -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-                    <button type="submit" class="btn btn-primary">新規追加</button>
+                    <%= submit_tag "新規追加", class: "btn btn-primary"%>
                 </div>
             </div>
-        </div>
-    </form>
-</div>
-
-<!-- モーダルの配置 -->
-<div class="modal fade" id="modal-delete-all" tabindex="-1">
-    <div class="modal-dialog modal-sm">
-
-        <!-- モーダルのコンテンツ -->
-        <div class="modal-content">
-            <!-- モーダルのヘッダ -->
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="modal-label">ダイアログ</h4>
-            </div>
-            <!-- モーダルのボディ -->
-            <div class="modal-body">
-                本当に一括削除してもよろしいですか？
-            </div>
-            <form action="delete_all" method="post">
-                <!-- モーダルのフッタ -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-                    <button type="submit" class="btn btn-danger">一括削除</button>
-                </div>
-            </form>
-        </div>
+        <% end %>
     </div>
 </div>
-
 
 <!-- <table>
      <thead>
@@ -107,6 +84,6 @@
      </tbody>
      </table>
 
-     <br>
+     <br> -->
 
-     <%= link_to 'New Card', new_card_path %> -->
+<%= link_to 'New Card', new_card_path %>
