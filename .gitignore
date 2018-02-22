@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/rails
 
 ### Rails ###
@@ -28,6 +27,7 @@ config/initializers/secret_token.rb
 
 ## Environment normalization:
 /.bundle
+/vendor
 /vendor/bundle
 
 # these should all be checked in to normalize the environment:
