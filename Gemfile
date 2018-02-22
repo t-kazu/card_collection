@@ -12,10 +12,6 @@ gem 'rails', '~> 5.1.4'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
-# bootstrap
-gem 'bootstrap', '~> 4.0.0.beta2.1'
-# jquery
-gem 'jquery-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
