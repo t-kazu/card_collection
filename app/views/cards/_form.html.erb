@@ -13,13 +13,12 @@
         <% end %>
 
         <div class="field">
-            <%= form.label :name %>
-            <%= form.text_field :name, id: :card_name %>
-        </div>
-
-        <div class="field">
-            <%= form.label :card_id %>
+            <%= form.label 'カード番号' %>
             <%= form.text_field :card_id, id: :card_card_id %>
+        </div>
+        <div class="field">
+            <%= form.label 'カード名' %>
+            <%= form.text_field :name, id: :card_name %>
         </div>
 
         <div class="actions">
