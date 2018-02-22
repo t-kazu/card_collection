@@ -8,3 +8,4 @@
 $ bundle install --path=vendor/
 $ bundle exec rails s
 ```
+所持カード一覧画面：`localhost:3000/cards`
