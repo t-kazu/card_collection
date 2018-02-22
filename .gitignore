@@ -28,7 +28,7 @@ config/initializers/secret_token.rb
 ## Environment normalization:
 /.bundle
 /vendor
-/vendor/bundle
+/vendor/ruby
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
