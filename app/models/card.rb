@@ -1,3 +1,3 @@
 class Card < ApplicationRecord
-   validates_uniqueness_of :card_id, :name
+   validates_uniqueness_of :card_id
 end
