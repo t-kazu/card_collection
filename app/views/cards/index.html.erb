@@ -15,22 +15,26 @@
         <font size="3"><strong>所持枚数 <%= @cards.size %> 枚</strong></font>
         <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#modal-register">新規登録</button>
     </caption>
-    <tr>
-        <th width="35%">カード番号</th>
-        <th width="35%">カード名</th>
-        <th width="20%">コメント</th>
-        <th width="5%">編集</th>
-        <th width="5%">削除</th>
-    </tr>
-    <% @cards.each do |card| %>
+    <thead>
         <tr>
-            <td><%= card.card_id %></td>
-            <td><%= card.name %></td>
-            <td><%= card.note %></td>
-            <td><%= link_to '編集', edit_card_path(card), class: "btn btn-default" %></td>
-            <td><%= link_to '削除', card, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %></td>
+            <th width="35%">カード番号</th>
+            <th width="35%">カード名</th>
+            <th width="20%">コメント</th>
+            <th width="5%">編集</th>
+            <th width="5%">削除</th>
         </tr>
-    <% end %>
+    </thead>
+    <tbody>
+        <% @cards.each do |card| %>
+            <tr>
+                <td><%= card.card_id %></td>
+                <td><%= card.name %></td>
+                <td><%= card.note %></td>
+                <td><%= link_to '編集', edit_card_path(card), class: "btn btn-default" %></td>
+                <td><%= link_to '削除', card, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %></td>
+            </tr>
+        <% end %>
+    </tbody>
 </table>
 
 <!-- モーダルの配置 -->
