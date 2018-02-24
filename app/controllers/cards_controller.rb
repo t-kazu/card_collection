@@ -29,7 +29,7 @@ class CardsController < ApplicationController
   # POST /cards
   # POST /cards.json
   def create
-    @card = Card.new(name: params[:name], card_id: params[:card_id])
+    @card = Card.new(name: params[:name], card_id: params[:card_id], note: params[:note])
 
     respond_to do |format|
       if @card.save
@@ -47,7 +47,7 @@ class CardsController < ApplicationController
   def update
     respond_to do |format|
       if @card.update(card_params)
-        format.html { redirect_to @card, notice: 'Card was successfully updated.' }
+        format.html { redirect_to cards_path, notice: 'Card was successfully updated.' }
         format.json { render :show, status: :ok, location: @card }
       else
         format.html { render :edit }
@@ -74,6 +74,6 @@ class CardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def card_params
-      params.require(:card).permit(:name, :card_id)
+      params.require(:card).permit(:name, :card_id, :note)
     end
 end
