@@ -42,7 +42,7 @@ Card.create!([
   {name: "ムッとした時の表情 恵", card_id: "W56-048C"},
   {name: "消えていくハイライト", card_id: "W56-076U"},
   {name: "企画へのダメ出し 英梨々", card_id: "W56-012U"},
-  {name: "すれ違いデートイベント", card_id: "W56-080C"},
+  {name: "すれ違いデートイベント", card_id: "W56-080CC"},
   {name: "icy tail", card_id: "W56-099CR"},
   {name: "凝視する 英梨々", card_id: "W56-022C"},
   {name: "羞恥心の発露 恵", card_id: "W56-071C"},
@@ -86,5 +86,17 @@ Card.create!([
   {name: "理想の女の子 恵", card_id: "W56-032RR"},
   {name: "二人の夜 詩羽", card_id: "W56-056RR"},
   {name: "倫也の愛弟子 出海", card_id: "W56-002RR"},
-  {name: "多彩な衣装 恵", card_id: "W56-058S SR"}
+  {name: "多彩な衣装 恵", card_id: "W56-058S SR"},
+  {name: "icy tail 美智留", card_id: "W56-081SP SP"},
+  {name: "頼れる先輩 詩羽", card_id: "W56-031S SR"},
+  {name: "頼れる先輩 詩羽", card_id: "W56-031RR"},
+  {name: "クリエータの矜持詩羽", card_id: "W56-059RR"},
+  {name: "ライブ衣装 美智留", card_id: "W56-084R"},
+  {name: "乙女な本質英梨々", card_id: "W56-001RR"},
+  {name: "ねんどろいどぷらす　詩羽", card_id: "W56-104PR"},
+  {name: "謎の威圧感 恵", card_id: "W56-041U"},
+  {name: "blessing software 詩羽", card_id: "W56-064S SR"},
+  {name: "夢を叶えるまでの物語 恵", card_id: "W56-057RR"},
+  {name: "倫也の企画書", card_id: "W56-077U"},
+  {name: "ねんどろいどぷらす 美智留", card_id: "W56-105PR"}
 ])
