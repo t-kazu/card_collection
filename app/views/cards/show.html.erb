@@ -10,5 +10,11 @@
   <%= @card.card_id %>
 </p>
 
+<p>
+    <strong>Note:</strong>
+    <%= @card.note %>
+</p>
+
+
 <%= link_to 'Edit', edit_card_path(@card) %> |
 <%= link_to 'Back', cards_path %>

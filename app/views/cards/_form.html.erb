@@ -20,6 +20,10 @@
             <%= form.label 'カード名' %>
             <%= form.text_field :name, id: :card_name %>
         </div>
+        <div class="field">
+            <%= form.label 'コメント' %>
+            <%= form.text_field :note, id: :card_note %>
+        </div>
 
         <div class="actions">
             <%= form.submit %>
