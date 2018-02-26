@@ -6,11 +6,11 @@ class CardsController < ApplicationController
   def index
     if params[:keyword]
       key = params[:keyword];
-      @cards = Card.where("name LIKE '%"+ key + "%' or card_id LIKE '%"+ key + "%' or note LIKE '%" + key + "%'").order('card_id')
+      @cards = Card.where("name LIKE '%"+ key + "%' or card_id LIKE '%"+ key + "%' or note LIKE '%" +  + "%'").order('card_id')
     else
       @cards = Card.all.order('card_id')
     end
-
+     @card = Card.new # 新規作成用
   end
 
   # GET /cards/1
@@ -30,7 +30,7 @@ class CardsController < ApplicationController
   # POST /cards
   # POST /cards.json
   def create
-    @card = Card.new(name: params[:name], card_id: params[:card_id], note: params[:note])
+    @card = Card.new(card_params)
 
     respond_to do |format|
       if @card.save

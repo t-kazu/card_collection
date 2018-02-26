@@ -40,7 +40,7 @@
 <!-- モーダルの配置 -->
 <div class="modal fade" id="modal-register" tabindex="-1">
     <div class="modal-dialog modal-sm">
-        <%= form_tag cards_path, method: 'post' do %>
+        <%= form_for @card do |f| %>
             <!-- モーダルのコンテンツ -->
             <div class="modal-content">
                 <!-- モーダルのヘッダ -->
@@ -52,17 +52,17 @@
                 </div>
                 <!-- モーダルのボディ -->
                 <div class="modal-body">
-                    <label>カード番号*</label>
-                    <%= text_field_tag :card_id %>
-                    <label>カード名</label>
-                    <%= text_field_tag :name %>
-                    <label>コメント</label>
-                    <%= text_field_tag :note %>
+                    <%= f.label "カード番号*" %>
+                    <%= f.text_field :card_id %>
+                    <%= f.label "カード名" %>
+                    <%= f.text_field :name %>
+                    <%= f.label "コメント" %>
+                    <%= f.text_field :note %>
                 </div>
                 <!-- モーダルのフッタ -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-                    <%= submit_tag "新規追加", class: "btn btn-primary"%>
+                    <%= f.submit "新規追加", class: "btn btn-primary"%>
                 </div>
             </div>
         <% end %>
