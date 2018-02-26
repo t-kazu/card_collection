@@ -1,3 +1,3 @@
 class Card < ApplicationRecord
-   validates_uniqueness_of :card_id
+   validates :card_id, presence: true, uniqueness: true
 end
