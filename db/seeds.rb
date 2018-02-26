@@ -110,5 +110,12 @@ Card.create!([
   {name: "フラグの立たない彼女 恵", card_id: "W56-035S SR", note: "遊楽舎 新品"},
   {name: "八年ぶりの個別ルート", card_id: "W56-027R RRR", note: "遊楽舎 新品"},
   {name: "ライブ衣装 美智留", card_id: "W56-084S SR", note: "遊楽舎 新品"},
-  {name: "二人を引き離すもの 英梨々", card_id: "W56-006S SR", note: "遊楽舎 新品"}
+  {name: "二人を引き離すもの 英梨々", card_id: "W56-006S SR", note: "遊楽舎 新品"},
+  {name: "原始の幼なじみ 美智留", card_id: "W56-083S SR", note: "カードラボ 天神"},
+  {name: "倫也の愛弟子 出海", card_id: "W56-002SP SP", note: "Yellow Submarine 天神"},
+  {name: "メインヒロイン担当 恵", card_id: "W56-T04R RRR", note: "Yellow Submarine 天神"},
+  {name: "ツンデレ幼なじみ 英梨々", card_id: "W56-003S SR", note: "Yellow Submarine 天神"},
+  {name: "すれ違いデートイベント", card_id: "W56-080R RRR", note: "Yellow Submarine 天神"},
+  {name: "敵か味方か新キャラか", card_id: "W56-029R RRR", note: "Yellow Submarine 天神"},
+  {name: "ねんどろいどぷらす 恵", card_id: "W56-102PR", note: "Yellow Submarine 天神"}
 ])
