@@ -67,7 +67,6 @@ Card.create!([
   {name: "二人の夜の選択肢", card_id: "W56-078R RRR", note: nil},
   {name: "ねんどろいどぷらす 恵", card_id: "W56-103PR", note: nil},
   {name: "blessing software 詩羽", card_id: "W56-064R", note: nil},
-  {name: "ライブ衣装 美智留", card_id: "W56-048R", note: nil},
   {name: "譲れない夢 美智留", card_id: "W56-082R", note: nil},
   {name: "ファンシーウェーブ出海", card_id: "W56-010R", note: nil},
   {name: "修羅場突入 英梨々", card_id: "W56-033R", note: nil},
@@ -98,5 +97,18 @@ Card.create!([
   {name: "blessing software 詩羽", card_id: "W56-064S SR", note: nil},
   {name: "夢を叶えるまでの物語 恵", card_id: "W56-057RR", note: nil},
   {name: "倫也の企画書", card_id: "W56-077U", note: nil},
-  {name: "ねんどろいどぷらす 美智留", card_id: "W56-105PR", note: nil}
+  {name: "ねんどろいどぷらす 美智留", card_id: "W56-105PR", note: nil},
+  {name: "あまりにも薄い存在感 恵", card_id: "W56-038S SR", note: "遊楽舎 新品"},
+  {name: "ツンデレ系幼なじみ 英梨々", card_id: "W56-003RR", note: "遊楽舎 新品"},
+  {name: "フラグの立たない彼女 恵", card_id: "W56-035R", note: "遊楽舎 新品"},
+  {name: "原始の幼なじみ 美智留", card_id: "W56-083R", note: "遊楽舎 新品"},
+  {name: "blessing softwatre 英梨々", card_id: "W56-007R", note: "遊楽舎 新品"},
+  {name: "下品な煽り 詩羽", card_id: "W56-061R", note: "遊楽舎 新品"},
+  {name: "blessing software 恵", card_id: "W56-037R", note: "遊楽舎 新品"},
+  {name: "戦いの朝 出海", card_id: "W56-009R", note: "遊楽舎 新品"},
+  {name: "icy tail 美智留", card_id: "W56-081RR", note: "遊楽舎 新品"},
+  {name: "フラグの立たない彼女 恵", card_id: "W56-035S SR", note: "遊楽舎 新品"},
+  {name: "八年ぶりの個別ルート", card_id: "W56-027R RRR", note: "遊楽舎 新品"},
+  {name: "ライブ衣装 美智留", card_id: "W56-084S SR", note: "遊楽舎 新品"},
+  {name: "二人を引き離すもの 英梨々", card_id: "W56-006S SR", note: "遊楽舎 新品"}
 ])
