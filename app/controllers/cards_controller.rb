@@ -6,7 +6,7 @@ class CardsController < ApplicationController
   def index
     if params[:keyword]
       key = params[:keyword];
-      @cards = Card.where("name LIKE '%"+ key + "%' or card_id LIKE '%"+ key + "%' or note LIKE '%" +  + "%'").order('card_id')
+      @cards = Card.where("name LIKE '%"+ key + "%' or card_id LIKE '%"+ key + "%' or note LIKE '%" + key + "%'").order('card_id')
     else
       @cards = Card.all.order('card_id')
     end
