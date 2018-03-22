@@ -117,5 +117,9 @@ Card.create!([
   {name: "ツンデレ幼なじみ 英梨々", card_id: "W56-003S SR", note: "Yellow Submarine 天神"},
   {name: "すれ違いデートイベント", card_id: "W56-080R RRR", note: "Yellow Submarine 天神"},
   {name: "敵か味方か新キャラか", card_id: "W56-029R RRR", note: "Yellow Submarine 天神"},
-  {name: "ねんどろいどぷらす 恵", card_id: "W56-102PR", note: "Yellow Submarine 天神"}
+  {name: "ねんどろいどぷらす 出海", card_id: "W56-102PR", note: "Yellow Submarine 天神"},
+  {name: "冴えない彼女の育てかた", card_id: "W56-053R RRR", note: "Yellow Submarine 天神"},
+  {name: "夢を叶えるまでの物語 恵", card_id: "W56-057S SR", note: "Yellow Submarine 天神"},
+  {name: "意外な贈り物 出海", card_id: "W56-005S SR", note: "Yellow Submarine 天神"},
+  {name: "ねんどろいどぷらす 英梨々", card_id: "W56-101PR", note: "駿河屋"}
 ])
