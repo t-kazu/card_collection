@@ -3,7 +3,7 @@
 <center>
     <%= form_tag cards_path, method: 'get' do %>
         <p>
-            <%= text_field_tag :keyword %>
+            <%= text_field_tag :keyword, @key %>
             <%= submit_tag "検索"%>
         </p>
     <% end %>
