@@ -5,8 +5,8 @@ class CardsController < ApplicationController
   # GET /cards.json
   def index
     if params[:keyword]
-      key = params[:keyword];
-      @cards = Card.where("name LIKE '%"+ key + "%' or card_id LIKE '%"+ key + "%' or note LIKE '%" + key + "%'").order('card_id')
+      @key = params[:keyword];
+      @cards = Card.where("name LIKE '%"+ @key + "%' or card_id LIKE '%"+ @key + "%' or note LIKE '%" + @key + "%'").order('card_id')
     else
       @cards = Card.all.order('card_id')
     end
